@@ -176,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     overflow: hidden;
     border-radius: 50%;
     display: flex;
@@ -191,8 +191,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 120%;
     height: 120%;
     object-fit: cover;
-    object-position: 40% center;
-    margin-left: -1%;
+    object-position: 70% center;
+    margin-left: -10%;
 }
 
 .profile-placeholder {
@@ -766,8 +766,8 @@ section {
     }
 
     .profile-image {
-        width: 350px;
-        height: 350px;
+        width: 400px;
+        height: 400px;
     }
 
     .timeline::before {
@@ -786,8 +786,8 @@ section {
 
 @media (max-width: 576px) {
     .profile-image {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 
     .profile-placeholder i {
