@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-/* Hero Section - Updated to match reference */
+/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -145,27 +145,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__content {
     flex: 1;
-    padding-right: 2rem;
-}
-
-.hero__intro {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 0;
-    color: var(--text-color);
 }
 
 .hero__content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    color: var(--text-color-dark);
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, var(--primary-color), #38b2ac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero__content h2 {
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
     color: var(--text-color-light);
 }
 
@@ -179,88 +173,48 @@ h1, h2, h3, h4, h5, h6 {
     flex: 1;
     display: flex;
     justify-content: center;
-    position: relative;
 }
 
-/* Updated profile image to rectangular style */
 .profile-image {
     width: 400px;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
-    border-radius: 8px;
-    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0 10px 30px var(--shadow-color);
+    border: 5px solid var(--background-color-alt);
 }
 
 .profile-image img {
-    width: 100%;
-    height: 100%;
+    width: 130%;
+    height: 130%;
     object-fit: cover;
-    object-position: center;
+    object-position: 55% center;
+    margin-left: -5%;
 }
 
-/* Social circles around the profile image */
-.social-circle {
-    position: absolute;
-    width: 40px;
-    height: 40px;
+.profile-placeholder {
+    width: 500px;
+    height: 500px;
     background-color: var(--background-color-alt);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-color-dark);
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 10px 30px var(--shadow-color);
 }
 
-.social-circle a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-color-dark);
-}
-
-.social-circle:hover {
-    transform: scale(1.1);
-    background-color: var(--primary-color);
-}
-
-.social-circle:hover a {
-    color: white;
-}
-
-.social-circle:nth-child(1) {
-    top: 20%;
-    right: -20px;
-}
-
-.social-circle:nth-child(2) {
-    top: 40%;
-    right: -40px;
-}
-
-.social-circle:nth-child(3) {
-    bottom: 30%;
-    right: -20px;
+.profile-placeholder i {
+    font-size: 8rem;
+    color: var(--primary-color);
 }
 
 .hero__cta {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
-}
-
-.hero__cta .btn {
-    display: inline-flex;
-    align-items: center;
-}
-
-.hero__cta .btn i {
-    margin-right: 0.5rem;
 }
 
 /* Buttons */
@@ -760,7 +714,7 @@ section {
     margin-right: 1rem;
 }
 
-/* Responsive adjustments for hero */
+/* Responsive Styles */
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
@@ -770,7 +724,6 @@ section {
 
     .hero__content {
         margin-bottom: 3rem;
-        padding-right: 0;
     }
 
     .hero__content p {
@@ -779,18 +732,6 @@ section {
 
     .hero__cta {
         justify-content: center;
-    }
-
-    .hero__intro, .hero__content h1 {
-        text-align: center;
-    }
-
-    .hero__content h1 {
-        font-size: 3.5rem;
-    }
-
-    .social-circle {
-        display: none;
     }
 
     .contact__content {
@@ -806,6 +747,11 @@ section {
         width: auto;
         text-align: left;
     }
+
+    .profile-image {
+        width: 450px;
+        height: 450px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -814,7 +760,7 @@ section {
     }
 
     .hero__content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .hero__content h2 {
@@ -826,7 +772,7 @@ section {
     }
 
     .profile-image {
-        width: 300px;
+        width: 400px;
         height: 400px;
     }
 
@@ -845,12 +791,8 @@ section {
 }
 
 @media (max-width: 576px) {
-    .hero__content h1 {
-        font-size: 2.5rem;
-    }
-
     .profile-image {
-        width: 250px;
+        width: 350px;
         height: 350px;
     }
 
