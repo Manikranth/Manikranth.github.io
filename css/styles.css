@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.8rem 0;
+    padding: 2rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -103,6 +103,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.8rem;
     margin-bottom: 0;
     color: var(--primary-color);
+    margin-left: 1rem;
+}
+
+.header__menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .header__menu ul {
@@ -110,13 +117,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: 1.5rem;
 }
 
-.header__menu a {
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.header__menu a:hover {
-    color: var(--primary-color);
+.header__theme-toggle {
+    margin-right: 1rem;
 }
 
 .header__theme-toggle button {
@@ -174,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image {
-    width: 340px;
-    height: 340px;
+    width: 350px;
+    height: 350px;
     overflow: hidden;
     border-radius: 50%;
     display: flex;
@@ -186,11 +188,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image img {
-    width: 110%;
-    height: 110%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: left center;
-    margin-left: -15px;
 }
 
 .profile-placeholder {
@@ -703,30 +704,12 @@ section {
     font-size: 0.9rem;
 }
 
-/* Resume Button */
-.resume-btn {
-    margin-left: 1rem;
+/* Adding download button styles */
+.download-resume {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    background-color: transparent;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    border-radius: var(--btn-border-radius);
-    cursor: pointer;
-    transition: all var(--transition-speed);
-}
-
-.resume-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
-
-.resume-btn i {
-    font-size: 1rem;
+    margin-left: 1rem;
 }
 
 /* Responsive Styles */
@@ -782,8 +765,8 @@ section {
     }
 
     .profile-image {
-        width: 280px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
     }
 
     .timeline::before {
@@ -802,8 +785,8 @@ section {
 
 @media (max-width: 576px) {
     .profile-image {
-        width: 220px;
-        height: 220px;
+        width: 250px;
+        height: 250px;
     }
 
     .profile-placeholder i {
