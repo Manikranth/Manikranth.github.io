@@ -297,22 +297,6 @@ section {
     font-size: 1.1rem;
 }
 
-.about__quote {
-    position: relative;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    background-color: var(--background-color-alt);
-    border-left: 4px solid var(--primary-color);
-    border-radius: var(--card-border-radius);
-    font-style: italic;
-}
-
-.about__quote p {
-    margin-bottom: 0;
-    color: var(--text-color-dark);
-    font-weight: 500;
-}
-
 .about__badges {
     display: flex;
     flex-wrap: wrap;
@@ -466,72 +450,10 @@ section {
 }
 
 /* Projects Section */
-.projects-subtitle {
-    font-size: 1.8rem;
-    color: var(--text-color-dark);
-    margin: 3rem 0 1rem;
-    text-align: center;
-}
-
-.projects-intro {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-featured {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: var(--background-color-alt);
-    border-radius: var(--card-border-radius);
-    overflow: hidden;
-    box-shadow: 0 5px 15px var(--shadow-color);
-    margin-bottom: 3rem;
-}
-
-.project-featured__image {
-    width: 100%;
-}
-
-.project-featured__image img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.project-featured__content {
-    padding: 1.5rem 2rem 2rem;
-}
-
-.project-featured__content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.project-featured__content p {
-    margin-bottom: 1.5rem;
-}
-
-.project-featured__content ul {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-}
-
-.project-featured__content li {
-    margin-bottom: 0.8rem;
-    position: relative;
-    padding-left: 0.5rem;
-}
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    margin-bottom: 3rem;
 }
 
 .project-card {
@@ -596,61 +518,6 @@ section {
     font-weight: 500;
 }
 
-.infra-projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.infra-project {
-    background-color: var(--background-color-alt);
-    border-radius: var(--card-border-radius);
-    padding: 1.5rem;
-    box-shadow: 0 5px 15px var(--shadow-color);
-    transition: all var(--transition-speed);
-}
-
-.infra-project:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px var(--shadow-color);
-}
-
-.infra-project h4 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
-.infra-project__content p {
-    margin-bottom: 1rem;
-    font-size: 0.95rem;
-}
-
-.infra-project__content p:last-child {
-    margin-bottom: 0;
-}
-
-.github-stats {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.github-stats__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.github-stats__cards img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--card-border-radius);
-    box-shadow: 0 5px 15px var(--shadow-color);
-}
-
 /* Certifications Section */
 .certifications-grid {
     display: grid;
@@ -697,54 +564,6 @@ section {
 
 .certification-card__content p {
     font-size: 0.9rem;
-    color: var(--text-color-light);
-}
-
-/* Learning Section */
-.learning-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.learning-item {
-    display: flex;
-    gap: 1.5rem;
-    padding: 1.5rem;
-    background-color: var(--background-color-alt);
-    border-radius: var(--card-border-radius);
-    box-shadow: 0 5px 15px var(--shadow-color);
-    transition: all var(--transition-speed);
-}
-
-.learning-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px var(--shadow-color);
-}
-
-.learning-item__icon {
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-.learning-item__icon i {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.learning-item__content h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-}
-
-.learning-item__content p {
-    font-size: 1rem;
     color: var(--text-color-light);
 }
 
@@ -856,20 +675,10 @@ section {
     gap: 1.5rem;
 }
 
-.footer__logo {
-    text-align: center;
-}
-
 .footer__logo h2 {
     font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     color: var(--primary-color);
-}
-
-.footer__motto {
-    color: var(--text-color-light);
-    font-style: italic;
-    font-size: 1.1rem;
 }
 
 .footer__social {
