@@ -176,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .profile-image {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     border-radius: 50%;
     display: flex;
